@@ -23,16 +23,34 @@
         <link href="css/styles.min.css" rel="stylesheet" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-6P1V69M33X"></script>
+        <!-- DEBUG: Added so site works locally. -->
         <link rel="stylesheet" type="text/css" href="styles.min.css">
+        <!-- JS libraries and Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- Init carousel -->
+        <!-- <script>
+          $(document).ready(function(){
+            $('#myCarousel').carousel();
+          });
+        </script> -->
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'G-6P1V69M33X');
         </script>
     </head>
     <body id="page-top">
+        <!-- <script>
+    $(document).ready(function(){
+      $('#myCarousel').carousel({
+        interval: 2000
+      });
+    });
+  </script> -->
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
             <div class="container px-5">
@@ -73,14 +91,14 @@
                         </div>
                       </section> -->
                       <section id="welcome">
-                        <div id="imageCarousel" class="carousel slide mx-2 card-eam" data-ride="carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide mx-2 card-eam" data-ride="carousel">
                           <!-- Indicators -->
                           <ol class="carousel-indicators">
-                            <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#imageCarousel" data-slide-to="1"></li>
-                            <li data-target="#imageCarousel" data-slide-to="2"></li>
-                            <!-- Add more indicators here -->
-                            <li data-target="#imageCarousel" data-slide-to="7"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <!-- Add more indicators if you have more slides -->
                           </ol>
                       
                           <!-- Wrapper for slides -->
@@ -97,15 +115,15 @@
                             <div class="carousel-item">
                               <img class="d-block w-100 card-img-top-eam" src="assets/img/bed3.JPG" alt="Fourth slide">
                             </div>
-                            <!-- Add more carousel items here -->
+                            <!-- Add more carousel items if you have more images -->
                           </div>
                       
                           <!-- Left and right controls -->
-                          <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                           </a>
-                          <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                           </a>
@@ -114,6 +132,8 @@
                           <p class="card-text display-8">Elite Asian Massage offers the most therapeutic and relaxing Asian massage in Grand Rapids. Our massage therapists specialize in releasing pain and discomfort from the body, while offering a relaxing massage that will have you feeling invigorated.</p>
                         </div>
                       </section>
+                      
+                      
                       
 
                         <section id="seeus">
